@@ -4,21 +4,21 @@
 
 USE_UPNP:=0
 
-INCLUDEPATHS= \
- -I"C:\deps\boost" \
- -I"C:\deps\db\build_unix" \
- -I"C:\deps\ssl\include"
+INCLUDEPATHS?= \
+ -I"C:\OnlineGamingCoin-master\libs\boost_1_54_0" \
+ -I"C:\OnlineGamingCoin-master\libs\db-4.8.30.NC\build_unix" \
+ -I"C:\OnlineGamingCoin-master\libs\openssl-1.0.1e\include"
 
-LIBPATHS= \
- -L"C:\deps\boost\stage\lib" \
- -L"C:\deps\db\build_unix" \
- -L"C:\deps\ssl"
+LIBPATHS?= \
+ -L"C:\OnlineGamingCoin-master\libs\boost_1_54_0\stage\lib" \
+ -L"C:\OnlineGamingCoin-master\libs\db-4.8.30.NC\build_unix" \
+ -L"C:\OnlineGamingCoin-master\libs\openssl-1.0.1e"
 
 LIBS= \
- -l boost_system-mgw46-mt-s-1_49 \
- -l boost_filesystem-mgw46-mt-s-1_49 \
- -l boost_program_options-mgw46-mt-s-1_49 \
- -l boost_thread-mgw46-mt-s-1_49 \
+ -l boost_system-mgw46-mt-1_54 \
+ -l boost_filesystem-mgw46-mt-1_54 \
+ -l boost_program_options-mgw46-mt-1_54 \
+ -l boost_thread-mgw46-mt-1_54 \
  -l db_cxx \
  -l ssl \
  -l crypto
